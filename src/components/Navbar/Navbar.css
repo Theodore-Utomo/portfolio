@@ -1,0 +1,78 @@
+/* Navbar Styles */
+.navbar-custom {
+  background-color: transparent !important;
+  box-shadow: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-wrapper {
+  display: flex;
+  background-color: white;
+  border-radius: 50px;
+  padding: 8px 16px;
+  max-width: 900px; /* Match Home page width */
+  width: 100%;
+  margin: 0 auto; /* Center Navbar */
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar-wrapper:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between; /* Evenly distribute items */
+  width: 100%; /* Ensure full width */
+  align-items: center; /* Align vertically */
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Adjust color for hover */
+  transform: scale(1.1);
+}
+
+/* Centering Navbar and Responsiveness */
+.container {
+  max-width: 800px; /* Match Home page width */
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-wrapper {
+    padding: 4px 8px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-wrapper {
+    padding: 2px 4px;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+  }
+}
+
