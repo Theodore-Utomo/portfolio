@@ -1,128 +1,200 @@
 /* Name Animation */
 .name-letter {
-    display: inline-block;
-    transition: color 0.3s ease, transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .name-letter:hover {
-    color: #004080;
-    transform: scale(1.2);
-  }
-  
-  /* Section Styling */
-  body {
-    padding-top: 70px;
-  }
-  
-  #home {
-    max-width: 900px;
-    margin: 0 auto; /* Center Home content */
-  }
-  
-  .custom-width {
-    max-width: 900px; 
-    margin: 0 auto;
-  }
-  
-  /* Aligning the Image and Text */
-  .img-line {
-    width: 80px; /* Adjust image size */
-    height: 80px; /* Keep it square */
-    object-fit: cover;
-    margin-right: 15px; /* Add space between image and text */
-    border: 3px solid #004080; /* Optional border for style */
-  }
-  
-  .display-4 {
-    font-size: 2.5rem;
-    text-align: left; /* Ensure text is left-aligned */
-  }
-  
-  .text-primary {
-    color: #004080; /* Consistent color */
-  }
-  
-  /* Buttons */
-  .btn {
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
-  }
-  
-  .btn-lg {
-    font-size: 1.25rem;
-  }
-  
-  .shadow-sm {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Spacing Adjustments */
-  .me-3 {
-    margin-right: 15px; /* Ensure consistent spacing between image and text */
-  }
-  
-  .mt-4 {
-    margin-top: 20px; /* Spacing above buttons */
-  }
-  
-  /* Buttons: White by default */
-  .btn {
-    font-size: 1rem;
-    padding: 0.75rem 1.5rem;
-    background-color: white;
-    color: #333; /* Default text color */
-    border: 2px solid white; /* Border to match background */
-    transition: all 0.3s ease; /* Smooth animation */
-  }
-  
-  .btn-lg {
-    font-size: 1.25rem;
-  }
-  
-  /* Hover Animation */
-  .btn:hover {
-    color: #004080; /* Matches "text-primary" */
-    background-color: transparent; /* Keep the background clear */
-    border: 2px solid #004080; /* Add a border matching hover text */
-    transform: scale(1.05); /* Subtle scaling effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Slight shadow */
-  }
-  
-  /* Buttons with icons: Adjust spacing */
-  .btn i {
-    margin-right: 5px; /* Space between icon and text */
-  }
-  
-  /* Shadow for buttons */
-  .shadow-sm {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Spacing Adjustments */
-  .mt-4 {
-    margin-top: 20px; /* Spacing above buttons */
-  }
-  
-  /* Green Circle */
-  .green-circle {
-    width: 10px;
-    height: 10px;
-    background-color: #28a745; /* Bootstrap's green color */
-    border-radius: 50%;
-    display: inline-block;
-  }
-  
-  /* Looking for Work Styling */
-  .looking-for-work {
-    font-size: 1.25rem; /* Slightly larger font size */
-    color: #004080; /* Matches primary color aesthetic */
-    font-weight: 500; /* Semi-bold for emphasis */
-    display: flex;
-    align-items: center;
-  }
-  
-  .looking-for-work span {
-    margin-left: 5px; /* Space between circle and text */
-  }
-  
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.name-letter:hover {
+  color: #004080;
+  transform: scale(1.2);
+}
+
+/* Section Styling */
+body {
+  padding-top: 70px;
+}
+
+#home {
+  max-width: 900px;
+  margin: 0 auto;
+  /* Center Home content */
+}
+
+.custom-width {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Aligning the Image and Text */
+.img-line {
+  width: 80px;
+  /* Adjust image size */
+  height: 80px;
+  /* Keep it square */
+  object-fit: cover;
+  margin-right: 15px;
+  /* Add space between image and text */
+  border: 3px solid #004080;
+  /* Optional border for style */
+}
+
+.display-4 {
+  font-size: 2.5rem;
+  text-align: left;
+  /* Ensure text is left-aligned */
+}
+
+.text-primary {
+  color: #004080;
+  /* Consistent color */
+}
+
+.shadow-sm {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important; /* Light mode shadow */
+  border: 1px solid transparent;
+}
+
+/* Spacing Adjustments */
+.me-3 {
+  margin-right: 15px;
+  /* Ensure consistent spacing between image and text */
+}
+
+.mt-4 {
+  margin-top: 20px;
+  /* Spacing above buttons */
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid transparent; /* Ensure consistent border */
+  box-sizing: border-box;
+  transition: all 0.3s ease; /* Smooth transitions */
+  background-color: white;
+  color: #333;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #004080;
+  border: 2px solid #004080; /* Ensure border size is consistent */
+  transform: scale(1.05); /* Scale only without affecting border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.btn-lg {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.btn i {
+  margin-right: 5px;
+}
+
+/* Spacing Adjustments */
+.mt-4 {
+  margin-top: 20px;
+  /* Spacing above buttons */
+}
+
+/* Green Circle */
+.green-circle {
+  width: 10px;
+  height: 10px;
+  background-color: #28a745;
+  /* Bootstrap's green color */
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Looking for Work Styling */
+.looking-for-work {
+  font-size: 1.25rem;
+  /* Slightly larger font size */
+  color: #004080;
+  /* Matches primary color aesthetic */
+  font-weight: 500;
+  /* Semi-bold for emphasis */
+  display: flex;
+  align-items: center;
+}
+
+.looking-for-work span {
+  margin-left: 5px;
+  /* Space between circle and text */
+}
+
+/* General Dark Mode Styling */
+body.dark-mode {
+  background-color: #121212 !important;
+  /* Dark background for the entire app */
+  color: #f5f5f5 !important;
+  /* Light text for readability */
+}
+
+body.dark-mode .text-primary {
+  color: #90caf9 !important;
+  /* Light blue for primary text in dark mode */
+}
+
+body.dark-mode .text-secondary {
+  color: #bbbbbb !important;
+  /* Light gray for secondary text */
+}
+
+/* Adjust Link Colors */
+body.dark-mode a {
+  color: #90caf9 !important;
+  /* Light blue links */
+  text-decoration: none;
+}
+
+body.dark-mode a:hover {
+  color: #64b5f6 !important;
+  /* Slightly brighter blue on hover */
+}
+
+/* Buttons in Dark Mode */
+body.dark-mode .btn {
+  border: 2px solid #444 !important; /* Match border size */
+}
+
+body.dark-mode .btn:hover {
+  border: 2px solid #777 !important; /* Same size, just color change */
+}
+
+/* Button Icons */
+body.dark-mode .btn i {
+  color: #f5f5f5 !important;
+}
+
+.btn:hover i {
+  margin-right: 5px; /* Ensure no change in icon spacing */
+}
+/* Green Circle Adjustments for Visibility */
+body.dark-mode .green-circle {
+  background-color: #28a745;
+  /* Keep green visible on dark background */
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.6);
+  /* Add a glow for better visibility */
+}
+
+body.dark-mode .shadow-sm {
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid #444;
+}
+
+/* Text Muted Override */
+body.dark-mode .text-muted {
+  color: #aaaaaa !important;
+  /* Lighter muted text */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
