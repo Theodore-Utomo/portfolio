@@ -35,7 +35,7 @@ const Skills = () => {
                                     className="skill-logo mb-1 shadow-lg"
                                     style={{width: '40px', height: '40px'}}
                                 />
-                                <h6 className="card-title fs-5text-dark mb-0">{skill.language}</h6>
+                                <h6 className="card-title fs-6 text-dark mb-0">{skill.language}</h6>
                             </div>
                         </div>
                     </div>
