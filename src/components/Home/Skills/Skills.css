@@ -1,0 +1,61 @@
+.custom-width {
+    max-width: 750px; /* Same width as #home */
+    margin: 0 auto;   /* Center align */
+}
+
+/* Skills Section Specific Styling */
+#skills {
+    max-width: 750px; /* Same width as Introduction */
+    margin: 0 auto;   /* Center align the content */
+    color: #004080;   /* Matches Introduction color */
+}
+.skill-card {
+    border: none;
+    background-color: #f8f9fa;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.skill-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+}
+
+/* Text Styling */
+h1 {
+    color: #004080; /* Matches Introduction text-primary */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333; /* Darker text for readability */
+}
+
+/* Responsive Spacing */
+.row.g-4 {
+    margin-top: 20px; /* Space between heading and cards */
+}
+
+/* Ensure Proper Alignment for Consistency */
+.text-center {
+    text-align: center !important;
+}
+
+.text-primary {
+    color: #004080 !important;
+}
+
+.fs-5 {
+    font-size: 1.25rem; /* Matches Introduction paragraph size */
+}
