@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar.jsx';
 import Home from './components/Home/Home.jsx';
-import './index.css'; // Global styles, including default light mode
+import Projects from './components/Projects/Projects.jsx';
+import Contact from './components/Contact/Contact.jsx';
+import './index.css';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
-  // Toggle dark mode state
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
 
   useEffect(() => {
-    // Dynamically apply the dark-mode class to <body>
     if (darkMode) {
       document.body.classList.add('dark-mode');
     } else {
@@ -22,8 +23,14 @@ function App() {
 
   return (
     <div>
-      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <Home />
+      <Router>
+        <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </Router>
+      <Contact/>
     </div>
   );
 }

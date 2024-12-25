@@ -1,5 +1,6 @@
 import React from 'react';
 import './Introduction.css';
+import headshot from './Headshot.jpg';
 
 const Introduction = () => {
   const name = "Theodore Utomo";
@@ -10,11 +11,14 @@ const Introduction = () => {
       <div className="row align-items-center justify-content-center">
         <div className="col-lg-10 text-start mb-4">
           <div className="d-flex align-items-center">
-            <img
-              src="https://via.placeholder.com/100"
-              alt="Theodore Utomo"
-              className="me-3 rounded-circle img-line shadow-lg"
-            />
+            <div className="image-container">
+              <img
+                src={headshot}
+                alt="Theodore Utomo"
+                className="me-3 rounded-circle img-line shadow-lg"
+              />
+              <div className="spinning-border"></div>
+            </div>
             <div>
               <h1 className="fw-bold display-4 mb-0">
                 <span className="text-secondary">Hi, I'm</span>{' '}

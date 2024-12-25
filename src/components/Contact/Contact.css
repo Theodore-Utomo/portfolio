@@ -1,0 +1,38 @@
+.contact-container {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Optional border at the top */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between icons */
+}
+
+.icon-link {
+    font-size: 2rem; /* Large icon size */
+    color: #004080; /* Primary color */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-link:hover {
+    color: #007bff; /* Lighter blue on hover */
+    transform: scale(1.2); /* Slight zoom effect */
+}
+
+/* Dark Mode Styles */
+body.dark-mode .contact-container {
+    background-color: #121212; /* Dark mode background */
+    border-top: 1px solid #333; /* Dark mode border */
+}
+
+body.dark-mode .icon-link {
+    color: #90caf9; /* Light blue icon color in dark mode */
+}
+
+body.dark-mode .icon-link:hover {
+    color: #64b5f6; /* Brighter blue on hover in dark mode */
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
@@ -12,14 +13,13 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         >
           <ul className="navbar-nav d-flex flex-row align-items-center justify-content-between">
             <li className="nav-item">
-              <a
+              <Link
                 className={`nav-link fw-semibold ${darkMode ? 'text-light' : 'text-dark'}`}
-                href="#home"
+                to="/"
               >
                 Theodore Utomo
-              </a>
+              </Link>
             </li>
-            {/* Dark Mode Toggle Button */}
             <button
               className="btn btn-outline-dark fw-semibold theme-toggle-button"
               onClick={toggleDarkMode}
@@ -27,22 +27,14 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               {darkMode ? '☀️ Light Mode' : '🌙 Dark Mode'}
             </button>
             <li className="nav-item d-flex flex-row">
-              <a
+              <Link
                 className={`nav-link fw-semibold me-3 ${
                   darkMode ? 'text-light' : 'text-dark'
                 }`}
-                href="#projects"
+                to="/projects"
               >
                 Projects
-              </a>
-              <a
-                className={`nav-link fw-semibold ${
-                  darkMode ? 'text-light' : 'text-dark'
-                }`}
-                href="#frankie"
-              >
-                Frankie
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

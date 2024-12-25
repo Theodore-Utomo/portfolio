@@ -1,0 +1,43 @@
+.projects-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #004080; /* Primary color */
+}
+
+.card-text {
+    color: #555; /* Secondary text color */
+}
+
+.tags .badge {
+    font-size: 0.85rem;
+    background-color: #6c757d; /* Bootstrap secondary color */
+    color: #fff;
+}
+
+.github-button {
+    border: 2px solid #004080; /* Add border to the button */
+    background-color: white; /* Make background white */
+    color: #004080; /* Change text color */
+    transition: all 0.3s ease;
+}
+
+.github-button:hover {
+    background-color: #004080; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+    border: 2px solid #004080; /* Keep border consistent */
+}
