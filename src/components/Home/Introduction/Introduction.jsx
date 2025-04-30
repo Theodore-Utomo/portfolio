@@ -32,7 +32,7 @@ const Introduction = () => {
               </h1>
               <div className="d-flex align-items-center mt-2 looking-for-work">
                 <div className="green-circle me-2"></div>
-                <span>Looking for work</span>
+                <span>Software Engineer Intern at CareHero</span>
               </div>
             </div>
           </div>
