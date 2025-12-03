@@ -28,7 +28,7 @@ const Contact = () => {
                         rel="noopener noreferrer"
                         aria-label={contact.name}
                     >
-                        {contact.icon}
+                        <span className="icon-wrapper">{contact.icon}</span>
                     </a>
                 ))}
             </div>

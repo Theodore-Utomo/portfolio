@@ -1,5 +1,4 @@
 import React from 'react';
-import './Skills.css';
 
 const Skills = () => {
     const skills = [
@@ -9,7 +8,7 @@ const Skills = () => {
         { 'language': 'HTML', 'src': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' },
         { 'language': 'CSS', 'src': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg' },
         { 'language': 'JavaScript', 'src': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg' },
-        { 'language': 'C', 'src': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-plain.svg' },
+        { 'language': 'C', 'src': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg' },
         { 'language': 'C++', 'src': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-plain.svg' },
         { 'language': 'Flask', 'src': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg' },
         { 'language': 'NodeJS', 'src': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg' },
@@ -18,25 +17,40 @@ const Skills = () => {
     ];
 
     return (
-        <section id="skills" className="container custom-width flex-column text-center my-5">
-            <div className="row align-items-center justify-content-center">
-                <div className="col-lg-10 text-center mb-3">
-                    <h1 className="fw-bold display-4 mb-0 text-primary">Languages/Frameworks</h1>
-                </div>
+        <section id="skills" className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+            <div className="text-center mb-10 sm:mb-12">
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-2 text-[#004080] transition-colors duration-300">
+                    Languages & Frameworks
+                </h2>
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-[#004080] to-transparent mx-auto mt-4"></div>
             </div>
-            <div className="row g-4 justify-content-center">
+            
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6">
                 {skills.map((skill, index) => (
-                    <div key={index} className="col-4 col-sm-3 col-md-2">
-                        <div className="card h-100 shadow-sm skill-card">
-                            <div className="card-body p-2 text-center d-flex flex-column align-items-center">
+                    <div
+                        key={index}
+                        className="group relative"
+                    >
+                        <div className="relative h-full bg-white backdrop-blur-sm rounded-2xl p-4 sm:p-6 border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 flex flex-col items-center justify-center cursor-pointer overflow-hidden">
+                            {/* Gradient overlay on hover */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-indigo-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
+                            
+                            {/* Icon container with modern styling */}
+                            <div className="relative z-10 mb-3 sm:mb-4 p-3 sm:p-4 bg-gray-100 rounded-full shadow-lg group-hover:shadow-2xl transition-all duration-300 group-hover:scale-110">
                                 <img
                                     src={skill.src}
                                     alt={`${skill.language} logo`}
-                                    className="skill-logo mb-1 shadow-lg"
-                                    style={{width: '40px', height: '40px'}}
+                                    className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain transition-transform duration-300 group-hover:scale-110"
                                 />
-                                <h6 className="card-title fs-6 text-dark mb-0">{skill.language}</h6>
                             </div>
+                            
+                            {/* Skill name */}
+                            <h3 className="relative z-10 text-xs sm:text-sm md:text-base font-semibold text-gray-800 text-center transition-colors duration-300 group-hover:text-[#004080]">
+                                {skill.language}
+                            </h3>
+                            
+                            {/* Decorative element */}
+                            <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#004080] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-2xl"></div>
                         </div>
                     </div>
                 ))}

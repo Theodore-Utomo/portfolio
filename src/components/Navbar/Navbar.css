@@ -75,45 +75,13 @@
   }
 }
 
-.btn-outline-dark {
-  font-size: 0.875rem; /* Smaller font size */
-  padding: 6px 10px; /* Smaller padding for a compact button */
-  border: 2px solid #333; /* Thin border for button */
-  border-radius: 50px; /* Pill shape */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
-}
-
-/* Hover Effect: Circular Outline */
-.btn-outline-dark:hover {
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3); /* Circle outline effect */
-  background-color: #333; /* Darker background */
-  color: #fff; /* White text */
-  transform: scale(1.05); /* Slight scaling effect */
-}
-
-.bg-dark {
-  background-color: rgba(31, 31, 31, 0.85) !important; /* Dark with slight transparency */
-  color: #f5f5f5; /* Light text for dark mode */
-  backdrop-filter: blur(10px); /* Optional: Add a slight blur effect */
-}
-
-/* Translucent Background for Light Mode */
 .bg-white {
   background-color: rgba(255, 255, 255, 0.85) !important; /* Light with slight transparency */
   color: #333333; /* Dark text for light mode */
   backdrop-filter: blur(10px); /* Optional: Add a slight blur effect */
 }
 
-.dark-mode .navbar-custom {
-  background-color: #1f1f1f !important; /* Set dark mode background explicitly */
-  box-shadow: none !important; /* Ensure no shadow in dark mode */
-}
-
 .bg-white.navbar-wrapper:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Light shadow for light mode hover */
 }
 
-/* No hover effect in dark mode */
-.bg-dark.navbar-wrapper:hover {
-  box-shadow: none; /* No shadow for dark mode hover */
-}

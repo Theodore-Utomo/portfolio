@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Light Mode Defaults (Current Styles) */
 body {
   margin: 0;
@@ -20,87 +24,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-/* Dark Mode Styles */
-body.dark-mode {
-  background: linear-gradient(to bottom, #121212, #1f1f1f, #2e2e2e); /* Dark gradient */
-  color: #f5f5f5; /* Light text for dark mode */
-}
-
-body.dark-mode code {
-  color: #c5c5c5; /* Light text for code blocks */
-}
-
-body.dark-mode a {
-  color: #8ab4f8; /* Soft blue for links */
-  text-decoration: none;
-}
-
-body.dark-mode a:hover {
-  color: #6f9ce2; /* Slightly brighter hover effect */
-}
-
-/* Other Common Elements */
-body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4 {
-  color: #eaeaea; /* Light headings */
-}
-
-body.dark-mode .card {
-  background-color: #1f1f1f; /* Dark background for cards */
-  color: #f5f5f5;
-  border: 1px solid #444; /* Subtle border */
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-body.dark-mode button {
-  background-color: #444; /* Dark button background */
-  color: #f5f5f5;
-  border: 1px solid #666;
-}
-
-body.dark-mode button:hover {
-  background-color: #555;
-  color: #fff;
-  border-color: #888;
-}
-
-/* Dark Mode Global Styling */
-body.dark-mode {
-  background-color: #121212 !important; /* Dark background */
-  color: #f5f5f5; /* Light text */
-  margin: 0;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
-}
-
-body.dark-mode a {
-  color: #8ab4f8; /* Light blue links */
-}
-
-body.dark-mode .navbar-custom {
-  background-color: #1f1f1f; /* Dark navbar background */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
-}
-
-body.dark-mode .navbar-wrapper {
-  background-color: #333333; /* Dark wrapper background */
-}
-
-body.dark-mode .nav-link {
-  color: #f5f5f5 !important; /* Light text */
-}
-
-body.dark-mode .theme-toggle-button {
-  background-color: #444444;
-  color: #f5f5f5;
-  border: 1px solid #666;
-}
-
-body.dark-mode .theme-toggle-button:hover {
-  background-color: #555555;
-  color: #ffffff;
-  border-color: #888888;
-}
-
-/* Light Mode Defaults (optional to ensure consistency) */
 body {
   background-color: #ffffff; /* Light mode background */
   color: #333333; /* Dark text */
@@ -112,9 +35,4 @@ body {
 
 .nav-link {
   color: #333333;
-}
-
-.dark-mode .shadow-sm,
-.dark-mode .navbar-wrapper {
-  box-shadow: none !important; /* Remove all shadows */
 }

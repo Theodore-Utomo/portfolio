@@ -1,20 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Projects.css';
-import MoveOS from "./MoveOS.png";
-import Restaurant from "./Restaurant.png";
 
-const Projects = ({ darkMode }) => {
+const Projects = () => {
     const projects = [
         {
-            title: 'MoveOS iOS App',
-            description: 'Track, record, and revolutionize your fitness',
-            image: MoveOS,
+            title: 'DeepFrankAI Cat Body Language Analyzer',
+            description: 'AI tool to interpret your cat\'s mood from images.',
         },
         {
-            title: 'Restaurant Recommender API',
-            description: 'Get restaurant recommendations from the Boston area',
-            image: Restaurant,
+            title: 'Gallaugher\'s Quizzes',
+            description: 'Interactive quizzes on Full-Stack Development with Swift',
         },
     ];
 
@@ -26,7 +22,6 @@ const Projects = ({ darkMode }) => {
             <div className="text-center mt-1 mb-1">
                 <Link
                     to="/projects"
-                    state={{ darkMode }} /* Pass darkMode state to the projects page */
                     className="more-projects-link text-primary fw-bold"
                 >
                     More projects →
@@ -36,19 +31,8 @@ const Projects = ({ darkMode }) => {
                 {projects.map((project, index) => (
                     <div key={index} className="col-12 col-md-6">
                         <div className="card project-card shadow-sm">
-                            <div className="project-image">
-                                {project.image ? (
-                                    <img
-                                        src={project.image}
-                                        alt={project.title}
-                                        className="img-fluid"
-                                    />
-                                ) : (
-                                    <div className="placeholder-image"></div>
-                                )}
-                            </div>
                             <div className="card-body">
-                                <h3 className="card-title fw-bold mt-3">{project.title}</h3>
+                                <h3 className="card-title fw-bold">{project.title}</h3>
                                 <p className="card-text text-muted">
                                     {project.description}
                                 </p>

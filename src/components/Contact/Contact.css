@@ -16,6 +16,17 @@
     font-size: 2rem; /* Large icon size */
     color: #004080; /* Primary color */
     transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.icon-wrapper {
+    display: inline-block;
+    color: inherit;
+}
+
+.icon-wrapper svg {
+    fill: currentColor;
+    color: inherit;
 }
 
 .icon-link:hover {
@@ -23,16 +34,3 @@
     transform: scale(1.2); /* Slight zoom effect */
 }
 
-/* Dark Mode Styles */
-body.dark-mode .contact-container {
-    background-color: #121212; /* Dark mode background */
-    border-top: 1px solid #333; /* Dark mode border */
-}
-
-body.dark-mode .icon-link {
-    color: #90caf9; /* Light blue icon color in dark mode */
-}
-
-body.dark-mode .icon-link:hover {
-    color: #64b5f6; /* Brighter blue on hover in dark mode */
-}

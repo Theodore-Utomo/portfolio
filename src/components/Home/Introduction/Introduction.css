@@ -54,7 +54,7 @@ body {
   border-radius: 50%; /* Circular border */
   z-index: 1; /* Place behind the image */
   animation: none; /* No animation by default */
-  pointer-events: none; /* Ensure it doesn’t interfere with hover */
+  pointer-events: none; /* Ensure it doesn't interfere with hover */
 }
 
 .image-container:hover .spinning-border {
@@ -159,70 +159,8 @@ body {
   /* Space between circle and text */
 }
 
-/* General Dark Mode Styling */
-body.dark-mode {
-  background-color: #121212 !important;
-  /* Dark background for the entire app */
-  color: #f5f5f5 !important;
-  /* Light text for readability */
-}
-
-body.dark-mode .text-primary {
-  color: #90caf9 !important;
-  /* Light blue for primary text in dark mode */
-}
-
-body.dark-mode .text-secondary {
-  color: #bbbbbb !important;
-  /* Light gray for secondary text */
-}
-
-/* Adjust Link Colors */
-body.dark-mode a {
-  color: #90caf9 !important;
-  /* Light blue links */
-  text-decoration: none;
-}
-
-body.dark-mode a:hover {
-  color: #64b5f6 !important;
-  /* Slightly brighter blue on hover */
-}
-
-/* Buttons in Dark Mode */
-body.dark-mode .btn {
-  border: 2px solid #444 !important; /* Match border size */
-}
-
-body.dark-mode .btn:hover {
-  border: 2px solid #777 !important; /* Same size, just color change */
-}
-
-/* Button Icons */
-body.dark-mode .btn i {
-  color: #f5f5f5 !important;
-}
-
 .btn:hover i {
   margin-right: 5px; /* Ensure no change in icon spacing */
-}
-/* Green Circle Adjustments for Visibility */
-body.dark-mode .green-circle {
-  background-color: #28a745;
-  /* Keep green visible on dark background */
-  box-shadow: 0 0 5px rgba(40, 167, 69, 0.6);
-  /* Add a glow for better visibility */
-}
-
-body.dark-mode .shadow-sm {
-  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1) !important;
-  border: 1px solid #444;
-}
-
-/* Text Muted Override */
-body.dark-mode .text-muted {
-  color: #aaaaaa !important;
-  /* Lighter muted text */
 }
 
 .green-circle {
@@ -245,3 +183,4 @@ body.dark-mode .text-muted {
 *::after {
   box-sizing: border-box;
 }
+
