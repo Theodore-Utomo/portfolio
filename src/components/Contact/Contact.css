@@ -34,3 +34,27 @@
     transform: scale(1.2); /* Slight zoom effect */
 }
 
+/* Dark Mode Styles */
+body.dark-mode .contact-container {
+    background-color: #121212;
+    border-top: 1px solid #333;
+}
+
+body.dark-mode .icon-link {
+    color: #90caf9 !important;
+}
+
+body.dark-mode .icon-wrapper svg {
+    fill: #90caf9 !important;
+    color: #90caf9 !important;
+}
+
+body.dark-mode .icon-link:hover {
+    color: #64b5f6 !important;
+}
+
+body.dark-mode .icon-link:hover .icon-wrapper svg {
+    fill: #64b5f6 !important;
+    color: #64b5f6 !important;
+}
+
